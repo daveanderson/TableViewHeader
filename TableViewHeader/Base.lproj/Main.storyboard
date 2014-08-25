@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="s3l-GZ-b9d">
+    <dependencies>
+        <deployment version="2048" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="HuG-4C-FpX">
+            <objects>
+                <tableViewController id="s3l-GZ-b9d" customClass="ViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="o6K-uD-H1h">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="infinite" id="AfV-vS-VpN" userLabel="HeaderViewWrapper">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYA-nI-Wxv" userLabel="FixedView">
+                                    <rect key="frame" x="5" y="5" width="590" height="50"/>
+                                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="0sc-dP-EaF"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeP-pk-duk" userLabel="HeaderView">
+                                    <rect key="frame" x="8" y="55" width="584" height="37"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="infinite" text="The quick brown fox jumped over the lazy dog." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wV2-Ys-TC2">
+                                            <rect key="frame" x="15" y="15" width="554" height="7"/>
+                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.72735822200775146" green="0.28733238577842712" blue="0.29370215535163879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="wV2-Ys-TC2" secondAttribute="trailing" constant="15" id="ZqR-hu-0xp"/>
+                                        <constraint firstAttribute="bottom" secondItem="wV2-Ys-TC2" secondAttribute="bottom" constant="15" id="nmg-Pb-fww"/>
+                                        <constraint firstItem="wV2-Ys-TC2" firstAttribute="top" secondItem="zeP-pk-duk" secondAttribute="top" constant="15" id="qNI-hl-PVa"/>
+                                        <constraint firstItem="wV2-Ys-TC2" firstAttribute="leading" secondItem="zeP-pk-duk" secondAttribute="leading" constant="15" id="tX0-Oj-uN2"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="0.45000000000000001" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="zeP-pk-duk" secondAttribute="bottom" constant="8" id="9gX-tG-prd"/>
+                                <constraint firstItem="JYA-nI-Wxv" firstAttribute="top" secondItem="AfV-vS-VpN" secondAttribute="top" constant="5" id="DAJ-hP-uzM"/>
+                                <constraint firstAttribute="trailing" secondItem="JYA-nI-Wxv" secondAttribute="trailing" constant="5" id="R2P-w9-Cnj"/>
+                                <constraint firstItem="zeP-pk-duk" firstAttribute="top" secondItem="JYA-nI-Wxv" secondAttribute="bottom" id="YVt-2P-Pad"/>
+                                <constraint firstAttribute="trailing" secondItem="zeP-pk-duk" secondAttribute="trailing" constant="8" id="eJi-cU-4nR"/>
+                                <constraint firstItem="zeP-pk-duk" firstAttribute="leading" secondItem="AfV-vS-VpN" secondAttribute="leading" constant="8" id="piV-cb-NFB"/>
+                                <constraint firstItem="JYA-nI-Wxv" firstAttribute="leading" secondItem="AfV-vS-VpN" secondAttribute="leading" constant="5" id="wij-J8-9fS"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sampleCell" id="Tj4-PV-d8m">
+                                <rect key="frame" x="0.0" y="72" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tj4-PV-d8m" id="gIe-Bx-o9L">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="s3l-GZ-b9d" id="4Hj-ux-h56"/>
+                            <outlet property="delegate" destination="s3l-GZ-b9d" id="vUD-pb-Fxe"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="headerView" destination="AfV-vS-VpN" id="8AT-Sw-uW8"/>
+                        <outlet property="permanentBottomToTemporaryTop" destination="YVt-2P-Pad" id="OTS-Uo-TBp"/>
+                        <outlet property="permanentView" destination="JYA-nI-Wxv" id="p0B-tt-oiT"/>
+                        <outlet property="temporaryBottomToSuperBottom" destination="9gX-tG-prd" id="DF9-WP-9y1"/>
+                        <outlet property="temporaryView" destination="zeP-pk-duk" id="gLR-i4-iXv"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vzk-Y0-WAm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="393.75" y="631.25"/>
+        </scene>
+    </scenes>
+</document>
