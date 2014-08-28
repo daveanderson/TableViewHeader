@@ -17,14 +17,14 @@
                             <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYA-nI-Wxv" userLabel="FixedView">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYA-nI-Wxv" userLabel="PermanentView">
                                     <rect key="frame" x="5" y="5" width="590" height="50"/>
                                     <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="0sc-dP-EaF"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeP-pk-duk" userLabel="HeaderView">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeP-pk-duk" userLabel="TemporaryView">
                                     <rect key="frame" x="8" y="55" width="584" height="37"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="infinite" text="The quick brown fox jumped over the lazy dog." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wV2-Ys-TC2">
