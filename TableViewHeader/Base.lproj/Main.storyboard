@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="s3l-GZ-b9d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="s3l-GZ-b9d">
     <dependencies>
         <deployment version="2048" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,18 +17,11 @@
                             <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYA-nI-Wxv" userLabel="PermanentView">
-                                    <rect key="frame" x="5" y="5" width="590" height="50"/>
-                                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="50" id="0sc-dP-EaF"/>
-                                    </constraints>
-                                </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeP-pk-duk" userLabel="TemporaryView">
-                                    <rect key="frame" x="8" y="55" width="584" height="37"/>
+                                    <rect key="frame" x="8" y="15" width="584" height="77"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="infinite" text="The quick brown fox jumped over the lazy dog." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wV2-Ys-TC2">
-                                            <rect key="frame" x="15" y="15" width="554" height="7"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="infinite" text="The quick brown fox jumped over the lazy dog. The big back bugs blood. Suzy sells sea shells by the sea shore." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wV2-Ys-TC2">
+                                            <rect key="frame" x="15" y="15" width="554" height="47"/>
                                             <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -47,12 +40,9 @@
                             <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="0.45000000000000001" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="zeP-pk-duk" secondAttribute="bottom" constant="8" id="9gX-tG-prd"/>
-                                <constraint firstItem="JYA-nI-Wxv" firstAttribute="top" secondItem="AfV-vS-VpN" secondAttribute="top" constant="5" id="DAJ-hP-uzM"/>
-                                <constraint firstAttribute="trailing" secondItem="JYA-nI-Wxv" secondAttribute="trailing" constant="5" id="R2P-w9-Cnj"/>
-                                <constraint firstItem="zeP-pk-duk" firstAttribute="top" secondItem="JYA-nI-Wxv" secondAttribute="bottom" id="YVt-2P-Pad"/>
+                                <constraint firstItem="zeP-pk-duk" firstAttribute="top" secondItem="AfV-vS-VpN" secondAttribute="top" constant="15" id="ZoE-PC-UWj"/>
                                 <constraint firstAttribute="trailing" secondItem="zeP-pk-duk" secondAttribute="trailing" constant="8" id="eJi-cU-4nR"/>
                                 <constraint firstItem="zeP-pk-duk" firstAttribute="leading" secondItem="AfV-vS-VpN" secondAttribute="leading" constant="8" id="piV-cb-NFB"/>
-                                <constraint firstItem="JYA-nI-Wxv" firstAttribute="leading" secondItem="AfV-vS-VpN" secondAttribute="leading" constant="5" id="wij-J8-9fS"/>
                             </constraints>
                         </view>
                         <prototypes>
@@ -72,9 +62,6 @@
                     </tableView>
                     <connections>
                         <outlet property="headerView" destination="AfV-vS-VpN" id="8AT-Sw-uW8"/>
-                        <outlet property="permanentBottomToTemporaryTop" destination="YVt-2P-Pad" id="OTS-Uo-TBp"/>
-                        <outlet property="permanentView" destination="JYA-nI-Wxv" id="p0B-tt-oiT"/>
-                        <outlet property="temporaryBottomToSuperBottom" destination="9gX-tG-prd" id="DF9-WP-9y1"/>
                         <outlet property="temporaryView" destination="zeP-pk-duk" id="gLR-i4-iXv"/>
                     </connections>
                 </tableViewController>
